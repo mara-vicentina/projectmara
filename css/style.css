@@ -3,9 +3,25 @@
     src: url('../webfonts/NotoSans-Light.ttf') format('truetype');
 }
 
+
 @font-face {
     font-family: 'NotoSans-Medium';
     src: url('../webfonts/NotoSans-Medium.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'NotoSans-Bold';
+    src: url('../webfonts/NotoSans-Bold.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'NotoSans-SemiBold';
+    src: url('../webfonts/NotoSans-SemiBold.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src: url('../webfonts/NotoSans-Regular.ttf') format('truetype');
 } 
 
 body {
@@ -15,34 +31,41 @@ body {
     background-color: #1A7FBD;
 }
 
+/*Barra de Navegação*/
+
 .nav-container {
     width: 800px;
     margin: 0 auto 18px auto;
 }
 
 nav .logo {
-    height: 24px;
     width: 110px;
+    height: 24px;
     margin-top: 25px;
 }
 
 .navbar {
-    float: right;
     margin: 20px 50px 0 0;
     font-family: 'NotoSans-Light';
+    float: right;
 }
 
 .navbar li {
+    margin-right: 34px;
     list-style-type: none;
     display: inline-block;
-    margin-right: 34px;
+}
+
+.navbar li a:hover {
+    color: #CECECE;
 }
 
 .navbar li a {
-    text-decoration: none;
-    color: #FFF;
     font-weight: normal;
     font-size: 14px;
+    text-decoration: none;
+    color: #FFF;
+    
 }
 
 nav {
@@ -54,16 +77,21 @@ nav {
 }
 
 nav button {
-    background-color: #000;
-    border-radius: 4px;
-    color: #FFF;
-    padding: 8px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    float: right;
     margin-right: 10px;
     margin-top: 13px;
+    padding: 8px 20px;
+    font-size: 14px;
+    background-color: #000;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 4px;
+}
+
+nav button:hover {
+    color: #CECECE;
+    cursor: pointer;
 }
 
 hr {
@@ -71,38 +99,48 @@ hr {
     margin-left: 30px;
 }
 
+/*Header/Formulário*/
+
 header {
+    height: 800px;
     background-image: url('../assets_netuno/bannertopo.png');
     background-size:contain;
     background-repeat: no-repeat;
     background-position: left;
-    height: 800px;
 }
 
 .header-container-form {
-    background-color: #FFF;
-    border-radius: 5px;
-    float: right;
-    padding: 0px 0px;
     width: 350px;
     height: 600px;
     margin: 100px 360px;
+    padding: 0px 0px;
+    background-color: #FFF;
+    float: right;
+    border-radius: 5px;
+}
+
+.header-container-cadastro h3 {
+    font-family: 'NotoSans-Regular';
+    font-size: 20px;
+    color: #CECECE; 
+    letter-spacing: 1px;
 }
 
 .campo-texto-personalizado {
-    font-family: 'NotoSans-Medium';
-    font-size: 13px;
-    border-radius: 4px;
-    color: #1A7FBD;
-    padding: 8px 8px 8px 40px;
-    text-decoration: none;
     width: 255px;
     margin-left: 20px;
     margin-bottom: 10px;
+    padding: 8px 8px 8px 40px;
+    font-family: 'NotoSans-Medium';
+    font-size: 13px;
     background-repeat: no-repeat;
     background-position: left;
     background-color: #FFF;
     background-position-x: 10px;
+    text-decoration: none;
+    color: #1A7FBD;
+    border-radius: 4px;
+    border-color: #CECECE;
 }
 
 input[name="nome_completo"] {
@@ -121,16 +159,123 @@ input[name="estado"] {
 }
 
 .header-container-programacao {
-    background-color: #1A7FBD;
+    width: 350px;
     padding: 0px;
     font-family: 'NotoSans-Light';
     font-size: 14px;
+    background-color: #1A7FBD;
     color: #FFF;
-    width: 350px;
 }
+
 .conhecimento{
     margin-left: 20px;
     padding: auto;
-
 }
 
+/*O Projeto*/
+
+.container-projeto {
+    height: 500px;
+    margin-left: 110px;
+    background-image: url('../assets_netuno/dev.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.container-texto-projeto {
+    width: 340px;
+    margin: 80px 390px;
+    font-family: 'NotoSans-Light';
+    font-size: 13px;
+    float: right;
+    color: #FFF;
+}
+
+.container-texto-projeto h1 {
+    font-size: 30px;
+    color: #A4DCFF;
+    font-family: 'NotoSans-Medium';
+}
+
+.NotoSans-azul {
+    font-family: 'NotoSans-Bold';
+    font-size: 12px;
+    color: #1A7FBD;
+}
+
+.NotoSans-Bold {
+    font-family: 'NotoSans-Bold';
+    font-size: 12px;
+}
+
+/*O Problema*/
+
+.container-problema {
+    background-image: url('../assets_netuno/container2.png');
+    background-color: #F9F9F9;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 600px;
+    margin-top: 150px;
+    background-position-x: 310px;
+}
+
+.container-texto-problema {
+    float: right;
+    font-family: 'NotoSans-Regular';
+    font-size: 13px;
+    color: #000;
+    width: 340px;
+    margin: 80px 390px;
+
+}
+.container-texto-problema h2 {
+    font-size: 30px;
+    font-family: 'NotoSans-Medium';
+    background: -webkit-linear-gradient(0.90turn, #1A7FBD, #A4DCFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-texto-problema hr{
+    background: #CECECE;
+    height: 1px;
+    border: 0px;
+    margin: 0;
+}
+
+.NotoSans-Bold-Black {
+    font-family: 'NotoSans-Bold';
+    font-size: 12.5px;
+    text-align: left;
+}
+
+.NotoSans-Bold-Big {
+    font-family: 'NotoSans-Bold';
+    font-size: 16px;
+}
+
+.boxes-container {
+    margin: 0px 320px;
+    width: 900px;
+    clear: both;
+    background-color: aquamarine;
+}
+.box-problema {
+    height: 200px;
+    width: 270px;
+    margin:0 0 0 0;
+    background-color: #FFF;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+.box-problema h2 {
+    font-size: 18px;
+    font-family:'NotoSans-Regular';
+    color: #000;
+    text-align: center;
+
+}
