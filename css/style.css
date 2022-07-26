@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'NotoSans-Light';
+    src: url('../webfonts/NotoSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSans-Medium';
+    src: url('../webfonts/NotoSans-Medium.ttf') format('truetype');
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'NotoSans-Light';
+    background-color: #1A7FBD;
+}
+
+.nav-container {
+    width: 800px;
+    margin: 0 auto 18px auto;
+}
+
+nav .logo {
+    height: 24px;
+    width: 110px;
+    margin-top: 25px;
+}
+
+.navbar {
+    float: right;
+    margin: 20px 50px 0 0;
+    font-family: 'NotoSans-Light';
+}
+
+.navbar li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 34px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+nav {
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, transparent, rgba(255, 255,255, 0.7), transparent);
+    border-image-slice: 1;
+}
+
+nav button {
+    background-color: #000;
+    border-radius: 4px;
+    color: #FFF;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+header {
+    background-image: url('../assets_netuno/bannertopo.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 800px;
+}
+
+.header-container-form {
+    background-color: #FFF;
+    border-radius: 5px;
+    float: right;
+    padding: 0px 0px;
+    width: 350px;
+    height: 600px;
+    margin: 100px 360px;
+}
+
+.campo-texto-personalizado {
+    font-family: 'NotoSans-Medium';
+    font-size: 13px;
+    border-radius: 4px;
+    color: #1A7FBD;
+    padding: 8px 8px 8px 40px;
+    text-decoration: none;
+    width: 255px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #FFF;
+    background-position-x: 10px;
+}
+
+input[name="nome_completo"] {
+    background-image: url('../assets_netuno/icons/user.png');
+    background-size: 13px 15px;
+}
+
+input[name="email"] {
+    background-image: url('../assets_netuno/icons/mail.png');
+    background-size: 14px 12px;
+}
+
+input[name="estado"] {
+    background-image: url('../assets_netuno/icons/state.png');
+    background-size: 13px 13px;
+}
+
+.header-container-programacao {
+    background-color: #1A7FBD;
+    padding: 0px;
+    font-family: 'NotoSans-Light';
+    font-size: 14px;
+    color: #FFF;
+    width: 350px;
+}
+.conhecimento{
+    margin-left: 20px;
+    padding: auto;
+
+}
+

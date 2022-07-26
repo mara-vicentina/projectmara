@@ -6,78 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Netuno</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
         <nav>
-            <img class="logo" src="assets_netuno/assets/logo.png" alt="Gerando Diamantes">
-
-            <ul class="navbar">
-                <li><a href="#">O Projeto</a></li>
-                <li><a href="#">O Problema</a></li>
-                <li><a href="#">Sua Jornada</a></li>
-                <li><a href="#">Objetivos</a></li>
-            </ul>
-            <button>Processo Seletivo</button>
-            <hr>
+            <div class="nav-container">
+                <img class="logo" src="assets_netuno/assets/logo.png" alt="Gerando Diamantes">
+                <button>Processo Seletivo</button>
+                <ul class="navbar">
+                    <li><a href="#">O Projeto</a></li>
+                    <li><a href="#">O Problema</a></li>
+                    <li><a href="#">Sua Jornada</a></li>
+                    <li><a href="#">Objetivos</a></li>
+                </ul>
+            </div>
         </nav>
-
+        
         <header>
-            <img class="banner_topo" src="assets_netuno/bannertopo.png" alt="Banner Topo">
+            <div class="header-container-form">
+                <div class="header-container-cadastro">
+                    <form>
+                        <h3>Formulário de Cadastro</h3>
+                        <p>Preencha seus dados</p>
 
-            <form action="Formulário de Cadastro">
-                <p>Preencha seus dados</p>
-                <input type="text" placeholder="Nome Completo">
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="Estado">
+                        <input type="text" class="campo-texto-personalizado" name= "nome_completo" placeholder="Nome Completo*">
+                        <input type="text" class="campo-texto-personalizado" name= "email" placeholder="E-mail*">
+                        <input type="text" class="campo-texto-personalizado" name= "estado" placeholder="Estado*" list="nome_estado">
+                            <datalist id="nome_estado">
+                                <option value= "Acre (AC)">
+                                <option value= "Alagoas (AL)">
+                                <option value= "Amapá (AP)">
+                                <option value= "Amazonas (AM)">
+                                <option value= "Bahia (BA)">
+                                <option value= "Ceará (CE)">
+                                <option value= "Distrito Federal (DF)">
+                                <option value= "Espírito Santo (ES)">
+                                <option value= "Goiás (GO)">
+                                <option value= "Maranhão (MA)">
+                                <option value= "Mato Grosso (MT)">
+                                <option value= "Mato Grosso do Sul (MS)">
+                                <option value= "Minas Gerais (MG)">
+                                <option value= "Pará (PA)">
+                                <option value="Paraíba (PB)">
+                                <option value="Paraná (PR)">
+                                <option value="Pernambuco (PE)">
+                                <option value="Piauí (PI)">
+                                <option value="Rio de Janeiro (RJ)">
+                                <option value="Rio Grande do Norte (RN)">
+                                <option value="Rio Grande do Sul (RS)">
+                                <option value="Rondônia (RO)">
+                                <option value="Roraima (RR)">
+                                <option value="Santa Catarina (SC)">
+                                <option value="São Paulo (SP)">
+                                <option value="Sergipe (SE)">
+                                <option value="Tocantins (TO)">
+                            </datalist>
+                    </form>
+                </div>
 
-                <p>Conhecimento de Programação</p>
-                <input type="checkbox" name="formulario_cadastro_html" value="HTML">
-                <label>HTML</label>
+                <div class="header-container-programacao">
+                    <form>
+                        <p>Conhecimento de Programação</p>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_html" value="HTML">
+                        <label>HTML</label>
 
-                <input type="checkbox" name="formulario_cadastro_css" value="CSS">
-                <label>CSS</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_css" value="CSS">
+                        <label>CSS</label>
 
-                <input type="checkbox" name="formulario_cadastro_javascript" value="JavaScript">
-                <label>JavaScript</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_javascript" value="JavaScript">
+                        <label>JavaScript</label>
 
-                <input type="checkbox" name="formulario_cadastro_php" value="PHP">
-                <label>PHP</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_php" value="PHP">
+                        <label>PHP</label>
 
-                <input type="checkbox" name="formulario_cadastro_net" value=".NET">
-                <label>.NET</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_net" value=".NET">
+                        <label>.NET</label>
 
-                <input type="checkbox" name="formulario_cadastro_vuejs" value="Vue.JS">
-                <label>Vue.JS</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_vuejs" value="Vue.JS">
+                        <label>Vue.JS</label>
 
-                <input type="checkbox" name="formulario_cadastro_reactjs" value="ReactJS">
-                <label>ReactJS</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_reactjs" value="ReactJS">
+                        <label>ReactJS</label>
 
-                <input type="checkbox" name="formulario_cadastro_reactnative" value="React Native">
-                <label>React Native</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_reactnative" value="React Native">
+                        <label>React Native</label>
 
-                <input type="checkbox" name="formulario_cadastro_node" value="Node">
-                <label>Node</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_node" value="Node">
+                        <label>Node</label>
 
-                <input type="checkbox" name="formulario_cadastro_python" value="Python">
-                <label>Python</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_python" value="Python">
+                        <label>Python</label>
 
-                <input type="checkbox" name="formulario_cadastro_flutter" value="Flutter">
-                <label>Flutter</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_flutter" value="Flutter">
+                        <label>Flutter</label>
 
-                <input type="checkbox" name="formulario_cadastro_outras" value="Outras">
-                <label>Outras</label>
+                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_outras" value="Outras">
+                        <label>Outras</label>
+                    </form>
+                </div>
 
-                <p>Já trabalhou com desenvolvimento?</p>
-
-                <hr>
-                <p>(*) Campos Obrigatórios</p>
-
-                <button>Enviar</button>
-                <p>Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em política de privacidade.</p>
-            </form>
+                <div class="header-container-desenvolvimento">
+                    <form>
+                        <p>Já trabalhou com desenvolvimento?</p>
+                        <hr>
+                        <p>(*) Campos Obrigatórios</p>
+                        <button>Enviar</button>
+                        <p>Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em política de privacidade.</p>
+                    </form>
+                </div>
+            </div>
         </header>
 
         <section>
@@ -97,7 +136,7 @@
             <div class="container-imgproblema">
             <img class="container2" src="assets_netuno/container2.png" alt="O Problema">
             </div>
-            
+
             <div class="container-problema">
                 <h2>O Problema</h2>
                     <p>Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.</p>
