@@ -31,6 +31,31 @@ body {
     background-color: #1A7FBD;
 }
 
+.container-full-width {
+    width:100%;
+}
+
+.container-width {
+    width:1000px;
+    margin: 0 auto;
+}
+
+.bgblack {
+    background-color: #000;
+}
+
+.bgblue {
+    background-color: #1A7FBD;
+}
+
+.bgwhite {
+    background-color: #FFF;
+}
+
+.bggray {
+    background-color: #CECECE;
+}
+
 /*Barra de Navegação*/
 
 .nav-container {
@@ -101,22 +126,24 @@ hr {
 
 /*Header/Formulário*/
 
-header {
-    height: 800px;
+.background-header {
+    height: 850px;
     background-image: url('../assets_netuno/bannertopo.png');
-    background-size:contain;
     background-repeat: no-repeat;
-    background-position: left;
+    background-size:contain;
+    background-position: center;
+    background-position-x: 10px;
+    background-position-y: -20px;
 }
 
 .header-container-form {
     width: 350px;
-    height: 600px;
-    margin: 100px 360px;
-    padding: 0px 0px;
+    height: 580px;
+    margin: 80px 95px;
     background-color: #FFF;
     float: right;
     border-radius: 5px;
+    position: center;
 }
 
 .header-container-cadastro h3 {
@@ -127,17 +154,18 @@ header {
 }
 
 .campo-texto-personalizado {
-    width: 255px;
+    width: 265px;
     margin-left: 20px;
     margin-bottom: 10px;
-    padding: 8px 8px 8px 40px;
+    padding: 5px 5px 5px 25px;
     font-family: 'NotoSans-Medium';
     font-size: 13px;
     background-repeat: no-repeat;
     background-position: left;
     background-color: #FFF;
-    background-position-x: 10px;
+    background-position-x: 5px;
     text-decoration: none;
+    text-align: left;
     color: #1A7FBD;
     border-radius: 4px;
     border-color: #CECECE;
@@ -174,18 +202,24 @@ input[name="estado"] {
 
 /*O Projeto*/
 
-.container-projeto {
+.background-projeto {
     height: 500px;
-    margin-left: 110px;
     background-image: url('../assets_netuno/dev.png');
     background-size:contain;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
+    background-position-x: 150px;
+    background-position-y: -20px;
+}
+
+.container-projeto {
+    clear: both;
 }
 
 .container-texto-projeto {
     width: 340px;
-    margin: 80px 390px;
+    margin-right: 90px;
+    margin-top: 30px;
     font-family: 'NotoSans-Light';
     font-size: 13px;
     float: right;
@@ -211,24 +245,24 @@ input[name="estado"] {
 
 /*O Problema*/
 
-.container-problema {
+.background-problema {
     background-image: url('../assets_netuno/container2.png');
-    background-color: #F9F9F9;
     background-size:contain;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     height: 600px;
     margin-top: 150px;
     background-position-x: 310px;
 }
 
 .container-texto-problema {
+    margin-right: 90px;
+    margin-top: 30px;
     float: right;
     font-family: 'NotoSans-Regular';
     font-size: 13px;
     color: #000;
     width: 340px;
-    margin: 80px 390px;
 
 }
 .container-texto-problema h2 {
@@ -259,16 +293,16 @@ input[name="estado"] {
 
 .boxes-container {
     margin: 0px 320px;
-    width: 900px;
+    width: 850px;
     clear: both;
-    background-color: aquamarine;
 }
+
 .box-problema {
     height: 200px;
-    width: 270px;
-    margin:0 0 0 0;
+    width: 32%;
+    margin:0 5px 0 0;
     background-color: #FFF;
-    display: inline-block;
+    float: right;
     border-radius: 12px;
 }
 

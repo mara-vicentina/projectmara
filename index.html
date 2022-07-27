@@ -24,230 +24,242 @@
             </div>
         </nav>
         
-        <header>
-            <div class="header-container-form">
-                <div class="header-container-cadastro">
-                    <form>
-                        <h3>Formulário de Cadastro</h3>
-                        <p class="NotoSans-azul">Preencha seus dados</p>
+        <div class="container-full-width background-header">
+            <header class="container-width">
+                <div class="header-container-form">
+                    <div class="header-container-cadastro">
+                        <form>
+                            <h3>Formulário de Cadastro</h3>
+                            <p class="NotoSans-azul">Preencha seus dados</p>
 
-                        <input type="text" class="campo-texto-personalizado" name= "nome_completo" placeholder="Nome Completo*">
-                        <input type="text" class="campo-texto-personalizado" name= "email" placeholder="E-mail*">
-                        <input type="text" class="campo-texto-personalizado" name= "estado" placeholder="Estado*" list="nome_estado">
-                            <datalist id="nome_estado">
-                                <option value= "Acre (AC)">
-                                <option value= "Alagoas (AL)">
-                                <option value= "Amapá (AP)">
-                                <option value= "Amazonas (AM)">
-                                <option value= "Bahia (BA)">
-                                <option value= "Ceará (CE)">
-                                <option value= "Distrito Federal (DF)">
-                                <option value= "Espírito Santo (ES)">
-                                <option value= "Goiás (GO)">
-                                <option value= "Maranhão (MA)">
-                                <option value= "Mato Grosso (MT)">
-                                <option value= "Mato Grosso do Sul (MS)">
-                                <option value= "Minas Gerais (MG)">
-                                <option value= "Pará (PA)">
-                                <option value="Paraíba (PB)">
-                                <option value="Paraná (PR)">
-                                <option value="Pernambuco (PE)">
-                                <option value="Piauí (PI)">
-                                <option value="Rio de Janeiro (RJ)">
-                                <option value="Rio Grande do Norte (RN)">
-                                <option value="Rio Grande do Sul (RS)">
-                                <option value="Rondônia (RO)">
-                                <option value="Roraima (RR)">
-                                <option value="Santa Catarina (SC)">
-                                <option value="São Paulo (SP)">
-                                <option value="Sergipe (SE)">
-                                <option value="Tocantins (TO)">
-                            </datalist>
-                    </form>
+                            <input type="text" class="campo-texto-personalizado" name= "nome_completo" placeholder="Nome Completo*">
+                            <input type="text" class="campo-texto-personalizado" name= "email" placeholder="E-mail*">
+                            <input type="text" class="campo-texto-personalizado" name= "estado" placeholder="Estado*" list="nome_estado">
+                                <datalist id="nome_estado">
+                                    <option value= "Acre (AC)">
+                                    <option value= "Alagoas (AL)">
+                                    <option value= "Amapá (AP)">
+                                    <option value= "Amazonas (AM)">
+                                    <option value= "Bahia (BA)">
+                                    <option value= "Ceará (CE)">
+                                    <option value= "Distrito Federal (DF)">
+                                    <option value= "Espírito Santo (ES)">
+                                    <option value= "Goiás (GO)">
+                                    <option value= "Maranhão (MA)">
+                                    <option value= "Mato Grosso (MT)">
+                                    <option value= "Mato Grosso do Sul (MS)">
+                                    <option value= "Minas Gerais (MG)">
+                                    <option value= "Pará (PA)">
+                                    <option value="Paraíba (PB)">
+                                    <option value="Paraná (PR)">
+                                    <option value="Pernambuco (PE)">
+                                    <option value="Piauí (PI)">
+                                    <option value="Rio de Janeiro (RJ)">
+                                    <option value="Rio Grande do Norte (RN)">
+                                    <option value="Rio Grande do Sul (RS)">
+                                    <option value="Rondônia (RO)">
+                                    <option value="Roraima (RR)">
+                                    <option value="Santa Catarina (SC)">
+                                    <option value="São Paulo (SP)">
+                                    <option value="Sergipe (SE)">
+                                    <option value="Tocantins (TO)">
+                                </datalist>
+                        </form>
+                    </div>
+
+                    <div class="header-container-programacao">
+                        <form>
+                            <p>Conhecimento de Programação</p>
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_html" value="HTML">
+                            <label>HTML</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_css" value="CSS">
+                            <label>CSS</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_javascript" value="JavaScript">
+                            <label>JavaScript</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_php" value="PHP">
+                            <label>PHP</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_net" value=".NET">
+                            <label>.NET</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_vuejs" value="Vue.JS">
+                            <label>Vue.JS</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_reactjs" value="ReactJS">
+                            <label>ReactJS</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_reactnative" value="React Native">
+                            <label>React Native</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_node" value="Node">
+                            <label>Node</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_python" value="Python">
+                            <label>Python</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_flutter" value="Flutter">
+                            <label>Flutter</label>
+
+                            <input type="checkbox" class="conhecimento" name="formulario_cadastro_outras" value="Outras">
+                            <label>Outras</label>
+                        </form>
+                    </div>
+
+                    <div class="header-container-desenvolvimento">
+                        <form>
+                            <p class="NotoSans-azul">Já trabalhou com desenvolvimento?</p>
+                            <hr>
+                            <p>(*) Campos Obrigatórios</p>
+                            <button>Enviar</button>
+                            <p>Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em política de privacidade.</p>
+                        </form>
+                    </div>
                 </div>
+            </header>
+        </div>
 
-                <div class="header-container-programacao">
-                    <form>
-                        <p>Conhecimento de Programação</p>
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_html" value="HTML">
-                        <label>HTML</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_css" value="CSS">
-                        <label>CSS</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_javascript" value="JavaScript">
-                        <label>JavaScript</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_php" value="PHP">
-                        <label>PHP</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_net" value=".NET">
-                        <label>.NET</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_vuejs" value="Vue.JS">
-                        <label>Vue.JS</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_reactjs" value="ReactJS">
-                        <label>ReactJS</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_reactnative" value="React Native">
-                        <label>React Native</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_node" value="Node">
-                        <label>Node</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_python" value="Python">
-                        <label>Python</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_flutter" value="Flutter">
-                        <label>Flutter</label>
-
-                        <input type="checkbox" class="conhecimento" name="formulario_cadastro_outras" value="Outras">
-                        <label>Outras</label>
-                    </form>
+        <div class="container-full-width bgblue background-projeto">
+            <section class="container-projeto container-width">
+                <div class="container-texto-projeto">
+                    <h1>O Projeto</h1>
+                    <p>Com o "novo normal" causado pela pandemia dos últimos anos, mais empresas no mundo todo têm aberto oportunidades no modelo Home Office.<br>Alinhado a depreciação da moeda local, temos um alto índice de profissionais migrando para trabalhos em outros países</p>
+                    <p class="NotoSans-Bold">O Projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir os estresses causados por recrutamento e turn over na área de tecnologia, bem como gerar oportunidades de carreira para novos profissionais.</p>
                 </div>
-
-                <div class="header-container-desenvolvimento">
-                    <form>
-                        <p class="NotoSans-azul">Já trabalhou com desenvolvimento?</p>
-                        <hr>
-                        <p>(*) Campos Obrigatórios</p>
-                        <button>Enviar</button>
-                        <p>Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em política de privacidade.</p>
-                    </form>
-                </div>
+            </section>
             </div>
-        </header>
-
-        <section class="container-projeto">
-            <div class="container-texto-projeto">
-                <h1>O Projeto</h1>
-                <p>Com o "novo normal" causado pela pandemia dos últimos anos, mais empresas no mundo todo têm aberto oportunidades no modelo Home Office.<br>Alinhado a depreciação da moeda local, temos um alto índice de profissionais migrando para trabalhos em outros países</p>
-                <p class="NotoSans-Bold">O Projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir os estresses causados por recrutamento e turn over na área de tecnologia, bem como gerar oportunidades de carreira para novos profissionais.</p>
-            </div>
-        </section>
-
-        <section class="container-problema">
-            <div class="container-texto-problema">
-                <h2>O Problema</h2>
-                <p class="NotoSans-Bold-Big">Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.</p>
-                <hr>
-                <p>Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na casa dos R$167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI.</p>
-                <p class="NotoSans-Bold-Black">Um dos principais fatores desta falta de profissionais é o êxodo de profissionais para o exterior.</p>
-            </div>
-
-            <div class="boxes-container">
-                <div class="box-problema">
-                    <h2>Oportunidade</h2>
-                    <p class="texto-boxes">Acreditamos que a combinação de interesse, dedicação e oportunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo.</p>
+        
+        <div class="container-full-width background-problema bggray">
+            <section class="container-problema container-width">
+                <div class="container-texto-problema">
+                    <h2>O Problema</h2>
+                    <p class="NotoSans-Bold-Big">Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.</p>
+                    <hr>
+                    <p>Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na casa dos R$167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI.</p>
+                    <p class="NotoSans-Bold-Black">Um dos principais fatores desta falta de profissionais é o êxodo de profissionais para o exterior.</p>
                 </div>
 
-                <div class="box-problema">
-                    <h2>Comunidade</h2>
-                    <p class="texto-boxes">Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluída e eficiente.</p>
+                <div class="boxes-container">
+                    <div class="box-problema">
+                        <h2>Oportunidade</h2>
+                        <p class="texto-boxes">Acreditamos que a combinação de interesse, dedicação e oportunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo.</p>
+                    </div>
+
+                    <div class="box-problema">
+                        <h2>Comunidade</h2>
+                        <p class="texto-boxes">Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluída e eficiente.</p>
+                    </div>
+
+                    <div class="box-problema">
+                        <h2>Experiência Real</h2>
+                        <p class="texto-boxes">Entendemos que somente as experiências reais poderão trazer a bagagem que a teoria não o pode fazer.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container-full-width bgwhite">
+            <section class="container-width">
+
+                <img class="elemento" src="assets_netuno/elements/Vector2.png" alt="Vector2">
+
+                <h2>Sua Jornada</h2>
+                <div class="box-jornada">
+                    <div class="box-icons">
+                        <img class="icons" src="assets_netuno/icons/calendario.png" alt="Calendário">
+                    </div>
+                    <p>Programas de 4 meses de duração, sendo 6 horas/dia.</p>
                 </div>
 
-                <div class="box-problema">
-                    <h2>Experiência Real</h2>
-                    <p class="texto-boxes">Entendemos que somente as experiências reais poderão trazer a bagagem que a teoria não o pode fazer.</p>
+                <div class="box-jornada">
+                    <div class="box-icons">
+                        <img class="icons" src="assets_netuno/icons/medalha.png" alt="Medalha">
+                    </div>
+                    <p>Do Zero ao Junior Promissor em 4 meses.</p>
                 </div>
-            </div>
-        </section>
 
-        <section>
-
-            <img class="elemento" src="assets_netuno/elements/Vector2.png" alt="Vector2">
-
-            <h2>Sua Jornada</h2>
-            <div class="box-jornada">
-                <div class="box-icons">
-                    <img class="icons" src="assets_netuno/icons/calendario.png" alt="Calendário">
+                <div class="box-jornada">
+                    <div class="box-icons">
+                        <img class="icons" src="assets_netuno/icons/relogio.png" alt="Relógio">
+                    </div>
+                    <p>640 horas de aplicação prática dos conceitos.</p>
                 </div>
-                <p>Programas de 4 meses de duração, sendo 6 horas/dia.</p>
-            </div>
 
-            <div class="box-jornada">
-                <div class="box-icons">
-                    <img class="icons" src="assets_netuno/icons/medalha.png" alt="Medalha">
+                <div class="box-jornada">
+                    <div class="box-icons">
+                        <img class="icons" src="assets_netuno/icons/mail.png" alt="E-mail">
+                    </div>
+                    <p>Mentoria individual e coletiva em padão ágil.</p>
                 </div>
-                <p>Do Zero ao Junior Promissor em 4 meses.</p>
-            </div>
 
-            <div class="box-jornada">
-                <div class="box-icons">
-                    <img class="icons" src="assets_netuno/icons/relogio.png" alt="Relógio">
+                <div class="box-jornada">
+                    <div class="box-icons">
+                        <img class="icons" src="assets_netuno/icons/group.png" alt="Grupo">
+                    </div>
+                    <p>100% Home Office com plataformas de cursos online.</p>
                 </div>
-                <p>640 horas de aplicação prática dos conceitos.</p>
-            </div>
 
-            <div class="box-jornada">
-                <div class="box-icons">
-                    <img class="icons" src="assets_netuno/icons/mail.png" alt="E-mail">
+                <div class="box-jornada">
+                    <div class="box-icons">
+                        <img class="icons" src="assets_netuno/icons/target.png" alt="Grupo">
+                    </div>
+                    <p>Variedade de áreas dentro da tecnologia.</p>
                 </div>
-                <p>Mentoria individual e coletiva em padão ágil.</p>
-            </div>
 
-            <div class="box-jornada">
-                <div class="box-icons">
-                    <img class="icons" src="assets_netuno/icons/group.png" alt="Grupo">
+                <button>Quero me cadastrar para o Processo Seletivo</button>
+
+                <img class="elemento" src="assets_netuno/elements/Vector1.png" alt="Vector1">
+            </section>
+        </div>
+
+        <div class="container-full-width bcblue">
+            <section class="container-width">
+                <h2>Objetivos</h2>
+                
+                <div class="box-objetivos">
+                    <h2>Otimizar</h2>
+                    <p>Otimizar todo processo de contratação chegando a contribuir com uma economia de 40% no processo de recrutamento.</p>
                 </div>
-                <p>100% Home Office com plataformas de cursos online.</p>
-            </div>
 
-            <div class="box-jornada">
-                <div class="box-icons">
-                    <img class="icons" src="assets_netuno/icons/target.png" alt="Grupo">
+                <div class="box-objetivos">
+                    <h2>Gerar</h2>
+                    <p>Gerar novas oportunidades de carreira para pessoas interessadas em ingressar na área ou migrar de outras áreas que esteja descontente.</p>
                 </div>
-                <p>Variedade de áreas dentro da tecnologia.</p>
-            </div>
 
-            <button>Quero me cadastrar para o Processo Seletivo</button>
+                <div class="box-objetivos">
+                    <h2>Filtrar</h2>
+                    <p>Criar oportunidades brilhantes para profissionais que se destacarem junto a parceiros estratégicos de negócio.</p>
+                </div>
+            </section>
+        </div>
 
-            <img class="elemento" src="assets_netuno/elements/Vector1.png" alt="Vector1">
-        </section>
-
-        <section>
-            <h2>Objetivos</h2>
+        <div class="container-full-width bgblack">
+            <footer class="container-width">
+                <img class="logo-slogan" src="assets_netuno/assets/logo+slogan.png" alt="Logo Slogan">
+                <ul>
+                    <li><img class="icons" src="assets_netuno/icons/fb.png" alt="Facebook"></li>
+                    <li><img class="icons" src="assets_netuno/icons/ig.png" alt="Instagram"></li>
+                    <li><img class="icons" src="assets_netuno/icons/in.png" alt="Linkedin"></li>
+                </ul>
             
-            <div class="box-objetivos">
-                <h2>Otimizar</h2>
-                <p>Otimizar todo processo de contratação chegando a contribuir com uma economia de 40% no processo de recrutamento.</p>
-            </div>
+                <p>Netuno@2022 - Todos os direitos reservados</p>
 
-            <div class="box-objetivos">
-                <h2>Gerar</h2>
-                <p>Gerar novas oportunidades de carreira para pessoas interessadas em ingressar na área ou migrar de outras áreas que esteja descontente.</p>
-            </div>
+                <button>Processo Seletivo</button>
 
-            <div class="box-objetivos">
-                <h2>Filtrar</h2>
-                <p>Criar oportunidades brilhantes para profissionais que se destacarem junto a parceiros estratégicos de negócio.</p>
-            </div>
-        </section>
+                <ul>
+                    <li>O Projeto</li>
+                    <li>O Problema</li>
+                    <li>Sua Jornada</li>
+                    <li>Objetivos</li>
+                </ul>
 
-        <footer>
-            <img class="logo-slogan" src="assets_netuno/assets/logo+slogan.png" alt="Logo Slogan">
-            <ul>
-                <li><img class="icons" src="assets_netuno/icons/fb.png" alt="Facebook"></li>
-                <li><img class="icons" src="assets_netuno/icons/ig.png" alt="Instagram"></li>
-                <li><img class="icons" src="assets_netuno/icons/in.png" alt="Linkedin"></li>
-            </ul>
-           
-            <p>Netuno@2022 - Todos os direitos reservados</p>
-
-            <button>Processo Seletivo</button>
-
-            <ul>
-                <li>O Projeto</li>
-                <li>O Problema</li>
-                <li>Sua Jornada</li>
-                <li>Objetivos</li>
-            </ul>
-
-            <h6>Contato</h6>
-            <a href="tel:+5511912345678">11 91234.5678</a>
-            <a href="mailto:contato@netuno.com.br">contato@netuno.com.br</a>
-        </footer>
+                <h6>Contato</h6>
+                <a href="tel:+5511912345678">11 91234.5678</a>
+                <a href="mailto:contato@netuno.com.br">contato@netuno.com.br</a>
+            </footer>
+        </div>
     </main>
     
     <script src="js/main.js" type="text/javascript"></script>
