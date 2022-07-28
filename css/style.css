@@ -328,6 +328,128 @@ input[name="estado"] {
     margin-top: 0;
 }
 
+
+/*Sua Jornada*/
+
+.container-jornada {
+    margin: 0 auto;
+    width: 825px;
+    height: 800px;
+}
+
+.container-jornada h2 {
+    font-size: 30px;
+    font-family: 'NotoSans-Medium';
+    background: -webkit-linear-gradient(0.90turn, #1A7FBD, #A4DCFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 200px;
+    display: inline-block;
+}
+
+.vector2 {
+    display: inline-block;
+    width: 300px;
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.vector3 {
+    display: inline-block;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.container-jornada button {
+    padding: 17px 20px 17px 25px;
+    font-size: 14px;
+    background-color: #000;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 100px auto 20px auto;
+    display: block;
+    font-weight: bold;
+}
+
+.container-jornada button:hover {
+    cursor: pointer;
+}
+
+.container-jornada button a {
+    text-decoration: none;
+    color: #1A7FBD;
+}
+
+.container-jornada button a:hover{
+    text-decoration: underline;
+}
+
+.container-jornada button img{
+    width: 19px;
+    height: auto;
+    float: right;
+    margin-left: 15px;
+}
+
+.container-groupboxes-jornada {
+    height: 156px;
+    margin-top: 30px;
+}
+
+.box-jornada {
+    width: 265px;
+    height: 68px;
+    margin: 8px 8px 0 0;
+    padding: 0px;
+    background-color: #1A7FBD;
+    border-radius: 12px;
+    display: inline-block;
+    float: left;
+    border: 1px #FFF solid;
+    box-shadow: 5px 10px 100px #b4b4b5;;
+}
+
+.box-img-jornada {
+    margin: 10px 0 auto 10px;
+    width:50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.box-img-jornada img {
+    width: 25px;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.texto-jornada {
+    width: 185px;
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: 'NotoSans-Light';
+    color: #FFF;
+    text-align: left;
+    float: right;
+    display: inline-block;
+}
+
+.vector1 {
+    float: right;
+    margin-right: 290px;
+}
+
 /*Objetivos*/
 .container-objetivos {
     margin: 0 auto;
@@ -368,7 +490,6 @@ footer button {
     cursor: pointer;
     border: 1px #1A7FBD solid;
     float: right;
-
 }
 
 footer button:hover {
