@@ -3,6 +3,10 @@
     src: url('../webfonts/NotoSans-Light.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'NotoSans-ExtraLight';
+    src: url('../webfonts/NotoSans-ExtraLight.ttf') format('truetype');
+}
 
 @font-face {
     font-family: 'NotoSans-Medium';
@@ -300,25 +304,24 @@ input[name="estado"] {
 }
 
 .box-item {
-    width: 195px;
+    width: 198px;
     height: 120px;
-    margin:0 5px 0 0;
+    margin: 0px 5px 0 0;
     padding: 35px;
     background-color: #FFF;
     float: left;
     border-radius: 12px;
-    box-shadow: 5px 10px 30px #a3a2a2;
 }
 
 .texto-boxes {
     text-align: center;
     font-family: 'NotoSans-Medium';
     font-size: 12px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .box-item h2 {
-    font-size: 18px;
+    font-size: 22px;
     font-family:'NotoSans-Regular';
     color: #000;
     text-align: center;
@@ -329,10 +332,154 @@ input[name="estado"] {
 .container-objetivos {
     margin: 0 auto;
     width: 825px;
-    height: 500px;
+    height: 400px;
     clear: both;
 }
 
-.container-texto-objetivos {
-    clear: both;
+.container-texto-objetivos h2 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family:'NotoSans-Medium';
+    font-size: 30px;
+    margin: 50px 0 30px 0;
+}
+
+/*Footer*/
+.container-footer {
+    margin: 0 auto;
+    padding: 70px 0;
+    width: 760px;
+    height: 120px;
+}
+
+footer .logo-slogan {
+    width: 150px;
+    height: auto;
+}
+
+footer button {
+    padding: 8px 20px;
+    font-size: 14px;
+    background-color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px #1A7FBD solid;
+    float: right;
+
+}
+
+footer button:hover {
+    color: #FFF;
+    background-color: #1A7FBD;
+    cursor: pointer;
+}
+
+.icons-footer {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.icons-footer li {
+    margin-left: 0;
+    margin-right: 5px;
+    list-style-type: none;
+    display: inline-block;
+}
+.icons-footer li a:hover {
+    cursor: pointer;
+}
+
+.icons-footer li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.texto-footer {
+    color: #C3C3C3;
+    font-family: 'NotoSans-Light';
+    font-size: 8px;
+}
+
+.list-footer {
+    margin-top: 0;
+    display: list-item;
+    color: #FFF;
+    list-style-type: none;
+    border-right: 2px #424242 solid;
+    text-align: left;
+    font-family: 'NotoSans-Light';
+}
+
+.list-footer li a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color:#FFF;
+    display: block;
+}
+
+.list-footer li a:hover {
+    text-decoration: underline;
+}
+
+.container-itens {
+    display: inline-block;
+    width: 50%;
+}
+
+.box-problema {
+    box-shadow: 5px 10px 30px #b4b4b5;
+    border: 1px #CECECE solid;
+}
+
+.box-objetivo {
+    box-shadow: 10px 5px 80px #444444;
+    border: 1px #A4DCFF solid;
+}
+
+.container-footer div {
+    float: left;
+}
+
+.container-footer div:nth-child(1) {
+    width: 190px;
+    background-color: #000;
+}
+
+.container-footer div:nth-child(2) {
+    width: 190px;
+    background-color: #000;
+}
+
+.container-footer div:nth-child(3) {
+    width: 190px;
+    background-color: #000;
+}
+
+.container-footer div:nth-child(4) {
+    width: 190px;
+    background-color: #000;
+    font-family: 'NotoSans-Light';
+    color: #FFF;
+}
+
+.container-footer div:nth-child(4) a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #FFF;
+    padding-left: 55px;
+    display: block;
+}
+
+.container-footer div:nth-child(4) a:hover{
+    text-decoration: underline;
+}
+
+.container-footer div:nth-child(4) p {
+    padding-left: 55px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
