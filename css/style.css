@@ -150,11 +150,29 @@ hr {
     position: center;
 }
 
+.header-container-cadastro {
+    width: 350px;
+    height: 187px;
+    display: block;
+}
+
 .header-container-cadastro h3 {
     font-family: 'NotoSans-Regular';
-    font-size: 20px;
+    font-size: 18px;
     color: #CECECE; 
     letter-spacing: 1px;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.header-container-cadastro p {
+    font-family: 'NotoSans-Bold';
+    font-size: 12px;
+    color: #1A7FBD;
+    margin-left: 35px;
+    display: block;
+    margin-top: 10px;
 }
 
 .campo-texto-personalizado {
@@ -199,9 +217,126 @@ input[name="estado"] {
     color: #FFF;
 }
 
-.conhecimento{
+.header-container-programacao {
+    width: 350px;
+    height: 150px;
+    display: block;
+}
+
+.header-container-programacao form p {
+    font-size: 12px;
+    color: #FFF;
+    margin-left: 35px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    font-family: 'NotoSans-Bold';
+}
+
+.checkbox-container {
+    width: 315px;
+    margin-left: 35px;
+    margin-top: 0 auto;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    background-color: #1A7FBD;
+    color: currentColor;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    box-shadow: none;
+    position: absolute;
+    margin: 14px auto;
+}
+
+input [type=radio] {
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    background-color: #1A7FBD;
+    color: currentColor;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    box-shadow: none;
+    position: absolute;
+    margin: 14px auto;
+    display: inline block;
+}
+
+input[type=checkbox]:checked {
+    background-color: #FFF;
+}
+
+label {
+    margin-right: 10px;
+    font-family: 'NotoSans-Light';
+    font-size: 12px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 23px;
+    margin-top: 14px;
+}
+
+.text-dev {
+    font-family: 'NotoSans-Bold';
+    font-size: 12px;
+    color: #1A7FBD;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.text-camp {
+    font-family: 'NotoSans-Bold';
+    font-size: 8px;
+    color: #1A7FBD;
+    text-align: center;
+}
+
+.header-container-desenvolvimento button {
+    width: 330px;
+    margin-left: 10px;
+    margin-top: 13px;
+    padding: 8px 0;
+    font-size: 14px;
+    background-color: #1A7FBD;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 4px;
+    border: none;
+}
+
+.header-container-desenvolvimento button:hover {
+    cursor: pointer;
+}
+.text-terms {
+    font-family: 'NotoSans-Bold';
+    font-size: 8px;
+    color: #CECECE;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.text-terms a {
+    color: #1A7FBD;
+    text-decoration: none;
+}
+.text-terms a:hover {
+    color: #1A7FBD;
+    text-decoration: underline;
+}
+
+.header-container-desenvolvimento hr {
+    background: #CECECE;
+    width: 310px;
+    height: 1px;
+    border: 0px;
+    margin: 0;
     margin-left: 20px;
-    padding: auto;
 }
 
 /*O Projeto*/
@@ -234,12 +369,6 @@ input[name="estado"] {
     font-size: 30px;
     color: #A4DCFF;
     font-family: 'NotoSans-Medium';
-}
-
-.NotoSans-azul {
-    font-family: 'NotoSans-Bold';
-    font-size: 12px;
-    color: #1A7FBD;
 }
 
 .NotoSans-Bold {
