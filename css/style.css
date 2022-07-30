@@ -60,8 +60,6 @@ body {
     background-color: #F9F9F9;
 }
 
-/*Barra de Navegação*/
-
 .nav-container {
     width: 800px;
     margin: 0 auto 18px auto;
@@ -128,8 +126,6 @@ hr {
     margin-left: 30px;
 }
 
-/*Header/Formulário*/
-
 .background-header {
     height: 850px;
     background-image: url('../assets_netuno/bannertopo.png');
@@ -142,21 +138,22 @@ hr {
 
 .header-container-form {
     width: 350px;
-    height: 580px;
+    height: 600px;
     margin: 80px 140px 80px 95px;
     background-color: #FFF;
     float: right;
     border-radius: 5px;
     position: center;
+    border: 1px #A4DCFF solid;
 }
 
-.header-container-cadastro {
+.header-container-registration {
     width: 350px;
     height: 187px;
     display: block;
 }
 
-.header-container-cadastro h3 {
+.header-container-registration h3 {
     font-family: 'NotoSans-Regular';
     font-size: 18px;
     color: #CECECE; 
@@ -166,7 +163,7 @@ hr {
     margin-bottom: 0;
 }
 
-.header-container-cadastro p {
+.header-container-registration p {
     font-family: 'NotoSans-Bold';
     font-size: 12px;
     color: #1A7FBD;
@@ -175,11 +172,10 @@ hr {
     margin-top: 10px;
 }
 
-.campo-texto-personalizado {
-    width: 265px;
+.custom-field {
     margin-left: 20px;
     margin-bottom: 10px;
-    padding: 5px 5px 5px 25px;
+    padding: 5px 5px 5px 30px;
     font-family: 'NotoSans-Medium';
     font-size: 13px;
     background-repeat: no-repeat;
@@ -190,7 +186,15 @@ hr {
     text-align: left;
     color: #1A7FBD;
     border-radius: 4px;
-    border-color: #CECECE;
+    border: 1px #CECECE solid;
+}
+
+.custom-text-field {
+    width: 265px;
+}
+
+.custom-select-field {
+    width: 303px;
 }
 
 input[name="nome_completo"] {
@@ -203,13 +207,24 @@ input[name="email"] {
     background-size: 14px 12px;
 }
 
-input[name="estado"] {
+select[name="estado"] {
     background-image: url('../assets_netuno/icons/state.png');
     background-size: 13px 13px;
 }
 
-.header-container-programacao {
+input[type="text"]::placeholder,
+input[type="email"]::placeholder { 
+    color: #CECECE;
+}
+
+select[name="estado"] option:disabled {
+    color: #CECECE;
+}
+
+.header-container-computer-programming {
     width: 350px;
+    height: 150px;
+    display: block;
     padding: 0px;
     font-family: 'NotoSans-Light';
     font-size: 14px;
@@ -217,13 +232,7 @@ input[name="estado"] {
     color: #FFF;
 }
 
-.header-container-programacao {
-    width: 350px;
-    height: 150px;
-    display: block;
-}
-
-.header-container-programacao form p {
+.header-container-computer-programming p {
     font-size: 12px;
     color: #FFF;
     margin-left: 35px;
@@ -235,48 +244,34 @@ input[name="estado"] {
 .checkbox-container {
     width: 315px;
     margin-left: 35px;
-    margin-top: 0 auto;
+   margin-top: 10px;
 }
 
-input[type=checkbox] {
-    width: 15px;
-    height: 15px;
+input[type="checkbox"] {
+    width: 9px;
+    height: 9px;
+    outline: 2px solid #FFF;
+    outline-offset: 2px;
     appearance: none;
-    background-color: #1A7FBD;
-    color: currentColor;
-    border: 1px solid currentColor;
-    border-radius: 4px;
-    box-shadow: none;
-    position: absolute;
-    margin: 14px auto;
+    border-radius: 1px;
 }
 
-input [type=radio] {
-    width: 15px;
-    height: 15px;
-    appearance: none;
-    background-color: #1A7FBD;
-    color: currentColor;
-    border: 1px solid currentColor;
-    border-radius: 4px;
-    box-shadow: none;
-    position: absolute;
-    margin: 14px auto;
-    display: inline block;
-}
-
-input[type=checkbox]:checked {
+input[type="checkbox"]:checked {
+    accent-color: #FFF;
     background-color: #FFF;
 }
 
 label {
-    margin-right: 10px;
+    margin-right: 7px;
     font-family: 'NotoSans-Light';
     font-size: 12px;
     display: inline-block;
     text-align: left;
-    margin-left: 23px;
-    margin-top: 14px;
+    margin-left: 5px;
+    vertical-align: middle;
+    padding-bottom: 7px;
+    margin-top: 3px;
+    margin-bottom: 6px;
 }
 
 .text-dev {
@@ -286,20 +281,21 @@ label {
     text-align: left;
     margin-left: 35px;
     margin-top: 30px;
+    margin-bottom: 0;
 }
 
-.text-camp {
+.text-field {
     font-family: 'NotoSans-Bold';
     font-size: 8px;
     color: #1A7FBD;
     text-align: center;
 }
 
-.header-container-desenvolvimento button {
+.header-container-development input[type="submit"] {
     width: 330px;
     margin-left: 10px;
     margin-top: 13px;
-    padding: 8px 0;
+    padding: 12px 0;
     font-size: 14px;
     background-color: #1A7FBD;
     text-align: center;
@@ -309,9 +305,10 @@ label {
     border: none;
 }
 
-.header-container-desenvolvimento button:hover {
+.header-container-development input[type="submit"]:hover {
     cursor: pointer;
 }
+
 .text-terms {
     font-family: 'NotoSans-Bold';
     font-size: 8px;
@@ -330,7 +327,7 @@ label {
     text-decoration: underline;
 }
 
-.header-container-desenvolvimento hr {
+.header-container-development hr {
     background: #CECECE;
     width: 310px;
     height: 1px;
@@ -339,9 +336,29 @@ label {
     margin-left: 20px;
 }
 
-/*O Projeto*/
+input[type="radio"] {
+    width: 9px;
+    height: 9px;
+    outline: 2px solid #1A7FBD;
+    outline-offset: 2px;
+    appearance: none;
+    border-radius: 1px;
+    display: inline-block;
+    margin-left: 35px;
+}
 
-.background-projeto {
+input[type="radio"]:checked {
+    accent-color: #1A7FBD;
+    background-color: #1A7FBD;
+}
+
+.header-container-development label {
+    font-family: 'NotoSans-Medium';
+    color: #CECECE;
+    padding-top: 8px;
+}
+
+.background-project {
     height: 500px;
     background-image: url('../assets_netuno/dev.png');
     background-size:contain;
@@ -351,11 +368,11 @@ label {
     background-position-y: -20px;
 }
 
-.container-projeto {
+.container-project {
     clear: both;
 }
 
-.container-texto-projeto {
+.container-texto-project {
     width: 340px;
     margin-right: 150px;
     margin-top: 30px;
@@ -365,7 +382,7 @@ label {
     color: #FFF;
 }
 
-.container-texto-projeto h1 {
+.container-texto-project h1 {
     font-size: 30px;
     color: #A4DCFF;
     font-family: 'NotoSans-Medium';
@@ -376,9 +393,7 @@ label {
     font-size: 12px;
 }
 
-/*O Problema*/
-
-.background-problema {
+.background-problem {
     background-image: url('../assets_netuno/container2.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -388,7 +403,7 @@ label {
     background-position-x: 140px;
 }
 
-.container-texto-problema {
+.container-text-problem {
     margin-right: 150px;
     margin-top: 70px;
     float: right;
@@ -398,7 +413,7 @@ label {
     width: 340px;
 
 }
-.container-texto-problema h2 {
+.container-text-problem h2 {
     font-size: 30px;
     font-family: 'NotoSans-Medium';
     background: -webkit-linear-gradient(0.90turn, #1A7FBD, #A4DCFF);
@@ -406,7 +421,7 @@ label {
     -webkit-text-fill-color: transparent;
 }
 
-.container-texto-problema hr{
+.container-text-problem hr{
     background: #CECECE;
     height: 1px;
     border: 0px;
@@ -442,7 +457,7 @@ label {
     border-radius: 12px;
 }
 
-.texto-boxes {
+.text-boxes {
     text-align: center;
     font-family: 'NotoSans-Medium';
     font-size: 12px;
@@ -457,16 +472,18 @@ label {
     margin-top: 0;
 }
 
+.box-problem {
+    box-shadow: 5px 10px 30px #b4b4b5;
+    border: 1px #CECECE solid;
+}
 
-/*Sua Jornada*/
-
-.container-jornada {
+.container-journey {
     margin: 0 auto;
     width: 825px;
     height: 800px;
 }
 
-.container-jornada h2 {
+.container-journey h2 {
     font-size: 30px;
     font-family: 'NotoSans-Medium';
     background: -webkit-linear-gradient(0.90turn, #1A7FBD, #A4DCFF);
@@ -490,7 +507,8 @@ label {
     margin-left: 10px;
 }
 
-.container-jornada button {
+.container-journey a {
+    width: 330px;
     padding: 17px 20px 17px 25px;
     font-size: 14px;
     background-color: #000;
@@ -499,37 +517,32 @@ label {
     color: #FFF;
     border-radius: 7px;
     cursor: pointer;
-    margin: 100px auto 20px auto;
+    margin: 100px auto 15px auto;
     display: block;
     font-weight: bold;
 }
 
-.container-jornada button:hover {
+.container-journey a:hover {
     cursor: pointer;
 }
 
-.container-jornada button a {
-    text-decoration: none;
+.container-journey a span {
     color: #1A7FBD;
 }
 
-.container-jornada button a:hover{
-    text-decoration: underline;
-}
-
-.container-jornada button img{
+.container-journey a img{
     width: 19px;
     height: auto;
     float: right;
     margin-left: 15px;
 }
 
-.container-groupboxes-jornada {
+.container-groupboxes-journey {
     height: 156px;
     margin-top: 30px;
 }
 
-.box-jornada {
+.box-journey {
     width: 265px;
     height: 68px;
     margin: 8px 8px 0 0;
@@ -542,7 +555,7 @@ label {
     box-shadow: 5px 10px 100px #b4b4b5;;
 }
 
-.box-img-jornada {
+.box-img-journey {
     margin: 10px 0 auto 10px;
     width:50px;
     height: 50px;
@@ -552,7 +565,7 @@ label {
     position: relative;
 }
 
-.box-img-jornada img {
+.box-img-journey img {
     width: 25px;
     height: auto;
     position: absolute;
@@ -563,7 +576,7 @@ label {
     bottom: 0;
 }
 
-.texto-jornada {
+.text-journey {
     width: 185px;
     margin-top: 8px;
     font-size: 12px;
@@ -579,15 +592,14 @@ label {
     margin-right: 290px;
 }
 
-/*Objetivos*/
-.container-objetivos {
+.container-objective {
     margin: 0 auto;
     width: 825px;
     height: 400px;
     clear: both;
 }
 
-.container-texto-objetivos h2 {
+.container-text-objective h2 {
     color: #FFFFFF;
     text-align: center;
     font-family:'NotoSans-Medium';
@@ -595,7 +607,11 @@ label {
     margin: 50px 0 30px 0;
 }
 
-/*Footer*/
+.box-objective {
+    box-shadow: 5px 10px 30px #003556;
+    border: 1px #A4DCFF solid;
+}
+
 .container-footer {
     margin: 0 auto;
     padding: 70px 0;
@@ -647,7 +663,7 @@ footer button:hover {
     height: 20px;
 }
 
-.texto-footer {
+.text-footer {
     color: #C3C3C3;
     font-family: 'NotoSans-Light';
     font-size: 8px;
@@ -677,16 +693,6 @@ footer button:hover {
 .container-itens {
     display: inline-block;
     width: 50%;
-}
-
-.box-problema {
-    box-shadow: 5px 10px 30px #b4b4b5;
-    border: 1px #CECECE solid;
-}
-
-.box-objetivo {
-    box-shadow: 10px 5px 80px #444444;
-    border: 1px #A4DCFF solid;
 }
 
 .container-footer div {
